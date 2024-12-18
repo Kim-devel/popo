@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Добавить запись</title>
+</head>
+<body>
+    <h1>Добавить запись</h1>
+    <form method="POST">
+        ID сотрудника: <input type="number" name="employee_id" required><br>
+        Дата: <input type="date" name="work_date" required><br>
+        Время начала: <input type="time" name="start_time" required><br>
+        Время окончания: <input type="time" name="end_time" required><br>
+        <input type="submit" value="Сохранить">
+    </form>
+    <a href="{{ url_for('index') }}">На главную</a>
+</body>
+</html>
